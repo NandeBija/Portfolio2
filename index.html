@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Nande Bija's Portfolio</title>
+    <style>
+      body {
+        margin: 50;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow-x: hidden;
+       ;
+      }
+      html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+      }
+
+      .col-6 img {
+        border-radius: 49%;
+        height: 83%;
+        width: 90%;
+        position: relative;
+        left: 10px;
+      }
+
+      .card-body img {
+        height: 20%;
+        border-radius: 3%;
+      }
+
+      .card {
+        column-gap: 40px;
+      }
+
+      
+      .h2,
+      h2 {
+        text-align: center;
+        padding-bottom: 8px;
+      }
+      .h1,
+      h1 {
+        text-align: center;
+        color: gray;
+        font-size: medium;
+        padding-top: 1.5%;
+      }
+
+      #p{
+        font-size: 2rem;
+      }
+      #About{
+        background-color: rgb(233, 245, 219);
+      }
+      #resume{
+        background-color: white;
+      }
+      #skills{
+        background-color:rgb(233, 245, 219);
+      }
+      #projects{
+        background-color:rgb(233, 245, 219);
+      }
+      #call{
+        padding-left:7%;
+      }
+
+      #home {
+        height: 100vh;
+        background-image: url("https://ucarecdn.com/118482c6-5bbc-4de5-ade2-63c59873006f/image.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      
+      .AB{
+        padding-bottom: 4%;
+      }
+
+      .box {
+        text-align: center;
+        padding-top: 15%;
+      }
+      .col-5 p {
+        justify-self: end;
+        padding-top: 16%;
+        
+      }
+      .col-5{
+        height: 80px;
+      }
+      .col-7{
+        height: 394px;
+      }
+      .helloText {
+        font-size: 3.5em;
+        color: #f5f5f5;
+        text-align: center;
+      }
+      .myName {
+        font-size: 6.3em;
+        color: #ff0000b8;
+        padding-top: 0%;
+        font-weight: 900;
+        font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial,
+          Sans-serif;
+      }
+      .headerContent {
+        font-size: 2.5em;
+        color: #ece8e8ef;
+      }
+      .card:hover {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1.1);
+      }
+
+      
+      .pro{
+        padding-bottom: 4%;
+      }
+      
+      #Contact {
+        width: 100%;
+        height: 100%;
+        padding-top: 1%;
+        background-color:rgb(233, 245, 219);
+      }
+      
+      #back-top{
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999999999;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all .25s ease;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+      #memoji {
+        width: 80%;
+        height: 114%;
+        position: relative;
+        right: 11%;
+        bottom: 10%;
+      }
+
+      .section-header {
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 60px "Oswald", sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+      }
+      /* timeline section */
+      ul.timeline {
+        list-style-type: none;
+        position: relative;
+      }
+      ul.timeline:before {
+        content: " ";
+        background: #d4d9df;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+      }
+      ul.timeline > li {
+        margin: 20px 0;
+        padding-left: 20px;
+      }
+      ul.timeline > li:before {
+        content: " ";
+        background: white;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #e83922;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+      }
+      .mb-5 {
+        display: flex;
+      }
+      h4 {
+        text-align: center;
+      }
+      /* end timeline section */
+
+      .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 20px;
+       
+;
+        max-width: 840px;
+      }
+      .row p:nth-child(2) {
+        color: gray;
+        font-size: large;
+      }
+
+      /* Left contact page */
+      .form-horizontal {
+       
+        max-width: 400px;
+        font-family: "Lato";
+        font-weight: 400;
+      }
+
+      .form-control,
+      textarea {
+        max-width: 400px;
+
+        color: rgb(10, 10, 10);
+        letter-spacing: 1px;
+      }
+
+      .send-button {
+        margin-top: 15px;
+        height: 40px;
+        width: 400px;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .alt-send-button {
+        width: 400px;
+        height: 34px;
+        transition: all 0.2s ease-in-out;
+      }
+      .h7 {
+        color: rgb(0, 0, 0);
+        font-size: larger;
+      }
+      .comma{
+        color: red;
+        font-size: 25px;
+      }
+
+      .send-text {
+        display: block;
+        margin-top: 10px;
+        font: 700 12px "Lato", sans-serif;
+        letter-spacing: 2px;
+      }
+
+      .alt-send-button:hover {
+        transform: translate3d(0px, -29px, 0px);
+      }
+
+      /* SKills section */
+      .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+      }
+
+      .sp {
+        font-size: large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding-top: 10px;
+      }
+
+      .sk {
+        padding-bottom: 34px;
+      }
+
+      .skills:hover {
+        transition: transform 0.9s ease-in-out;
+        transform: scale(1.1);
+      }
+
+      .html {
+        width: 90%;
+        background-color: #f44336;
+        height: 50px;
+      }
+      .css {
+        width: 80%;
+        background-color: #f44336;
+      }
+      .js {
+        width: 50%;
+        background-color: #f44336;
+      }
+      .bootstrap {
+        width: 90%;
+        background-color: #f44336;
+        height: 50px;
+      }
+      .right-lnk {
+   float: right;
+}
+
+      hr {
+        
+        border-top: 1 px solid rgba(218, 204, 62);
+        /* margin: 70 px auto 55 px; */
+        ;
+        margin-left:12%;
+        margin-right:12%;
+      }
+     
+     
+     
+      footer {
+        text-align: center;
+        padding-top: 100px;
+        padding: 3px;
+        background-color: rgba(243, 243, 243, 0.993);
+        color: rgba(97, 90, 90, 0.938);
+      }
+
+      /* ENd of skills section */
+
+      /* Begin Right Contact Page */
+      .direct-contact-container {
+        max-width: 400px;
+      }
+
+      /* Location, Phone, Email Section */
+      .contact-list {
+        list-style-type: none;
+        margin-left: -30px;
+        padding-right: 20px;
+      }
+
+      .list-item {
+        line-height: 4;
+        color: #aaa;
+        padding-left: 7%;
+      }
+
+      .contact-text {
+        font: 300 18px "Lato", sans-serif;
+        letter-spacing: 1.9px;
+        color: #bbb;
+      }
+
+      .place {
+        margin-left: 62px;
+      }
+
+      .phone {
+        margin-left: 56px;
+      }
+
+      .gmail {
+        margin-left: 53px;
+      }
+      .social a:hover{
+        color: red;
+      }
+      .social a {
+        color: white;
+      }
+
+      .contact-text a {
+        color: #bbb;
+        text-decoration: none;
+        transition-duration: 0.2s;
+      }
+
+      .contact-text a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Social Media Icons */
+      .fa {
+        position: relative;
+        font-size: 22px;
+        text-align: center;
+        
+        padding-left: 2px;
+    color: #423d3d;
+    padding-top: 5px;
+        
+      }
+      .test-img-top{
+        width: 300px;
+        height: 250px;
+        border-radius: 8%;
+        padding: 10px;
+        padding-left: 3% ;
+        align-items: center;
+
+      }
+      .test{
+        text-align: center;
+        justify-items: start;
+      }
+      
+/* NEW NAVVV! */
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 600;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: courier new;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  color: #ff5959;
+ 
+}
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Begin Media Queries*/
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive 
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .card{
+        height: 200px;
+      }
+      .card img{
+        height: 110px;
+      }
+
+}
+
+      @media screen and (max-width: 850px) {
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+        .direct-contact-container,
+        .form-horizontal {
+          margin: 0 auto;
+        }
+
+        .direct-contact-container {
+          margin-top: 60px;
+          max-width: 300px;
+        }
+        .social-media-list li {
+          height: 60px;
+          width: 60px;
+          line-height: 60px;
+        }
+        
+      }
+
+      @media screen and (max-width: 569px) {
+        .direct-contact-container,
+        .form-wrapper {
+          float: none;
+          margin: 0 auto;
+        }
+        .form-control,
+        textarea {
+          margin: 0 auto;
+        }
+
+        .name,
+        .email,
+        textarea {
+          width: 280px;
+        }
+
+        .direct-contact-container {
+          margin-top: 60px;
+          max-width: 280px;
+        }
+        .social-media-list {
+          left: 0;
+        }
+        .social-media-list li {
+          height: 55px;
+          width: 55px;
+          line-height: 55px;
+          font-size: 2rem;
+        }
+        .social-media-list li:after {
+          width: 55px;
+          height: 55px;
+          line-height: 55px;
+        }
+      }
+
+      @media screen and (max-width: 410px) {
+        .send-button {
+          width: 99%;
+        }
+      }
+
+      
+
+      @media screen and (max-width: 900px) {
+        .land {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        
+        .col-6 {
+          display: none;
+        }
+        .box {
+          text-align: center;
+          padding-top: 46%;
+        }
+        .hellotext {
+          padding-right: 68px;
+        }
+       
+        #home {
+          height: 80vh;
+        }
+        .topnav {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 600;
+}
+        
+
+        .myName {
+          font-size: 2.8em;
+          color: #ff0000b8;
+          padding-top: 0%;
+          padding-right: 9%;
+        }
+        .headerContent {
+          font-size: 2.5em;
+          color: #ece8e8ef;
+          padding-right: 9%;
+        }
+        #memoji {
+          display: none;
+        }
+        .col-7 {
+        height: 92px;
+      }
+
+        .mb-5 {
+          margin-bottom: 3rem;
+
+          align-items: start;
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .col-5{
+          width:100%;
+        }
+        .col-5 p{
+        justify-self: end;
+        padding-top: 1px;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home <i class="fa fa-home" aria-hidden="true"></i></a>
+      <a href="#About">About <i class="fa fa-user"></i></a>
+      <a href="#resume">Resume <i class="fa fa-briefcase"></i></a>
+      <a href="#projects">Projects <i class="fa fa-cogs"></i></a>
+      <a href="#testimonil">Testimonials <i class="fa fa-commenting-o"></i></a>
+      <a href="#Contact">Contact <i class="fa fa-envelope"></i></a>
+
+     
+      
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Landing section -->
+    <section>
+      <div id="home">
+        <div class="box">
+          <h1>
+            <span class="helloText"><strong>Hello,</strong><br /></span>
+            <strong class="myName">I'm Nande Bija</strong><br />
+          </h1>
+          <br />
+          <p class="headerContent">Front-end developer | Back-end developer|<br><span class="social">
+            <a href="" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://github.com" target="_blank" class="fa fa-github"></a>
+            <a href="https://github.com" target="_blank" class="fa fa-instagram"></a>
+          </span></p>
+        </div>
+
+        <div class="land">
+          <img
+            src="landingpageimage1-removebg-preview.png"
+            alt="landingpageimage"
+            style="
+              position: relative;
+              bottom: 420px;
+              left: -38px;
+              width: 30%;
+              height: 30%;
+            "
+          />
+        </div>
+      </div>
+
+      
+    </section>
+
+    <script>
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- About section -->
+    <section id="About">
+      <div class="container" >
+        <div class="row">
+          <div class="AB">
+          <h1 class="h1">Get to know me</h1>
+          <h2 class="h2"><span style="border-bottom: 3px solid red; ">About</span></h2>
+        </div>
+          <div class="col-6">
+            <img src="land.jpeg" alt="Nande" />
+            <div class="aboutImg"></div>
+          </div>
+
+          <div class="col">
+            <div class="aboutContent">
+              <p>
+                <strong>Bio:</strong><br />
+                I enjoy turning complex probles into smaller and simpler,
+                manageable bits. Always eager to take on new challenges. <br />I
+                can be a bit shy and nervous around new people but warm up as
+                soon as I read the energy in the room.<br />
+
+                <strong>Where did your passion for coding start:</strong><br />
+                I fell in love with the tech industry as soon as I had access to
+                free Wi-Fi at University in 2017, <br />but only had the chance
+                to venture into the industry recently. The tech industry is the
+                future, and the future is now.
+              </p>
+
+              <!-- Merge skills into landing page -->
+              <strong><span style="border-bottom: 3px solid red; ">Skills:</span></strong><br />
+              <p>
+                <div class="container" >
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="sp">HTML</p>
+                      <div class="container shadow-lg" style="padding: 0%;">
+                        <div class="skills html">90%</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="sp">CSS</p>
+                      <div class="container shadow-lg" style="padding: 0%;">
+                        <div class="skills css">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p class="sp">JavaScript</p>
+                      <div class="container shadow-lg" style="padding: 0%;">
+                        <div class="skills js">65%</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p class="sp">Bootstrap</p>
+                      <div class="container shadow-lg" style="padding: 0%;">
+                        <div class="skills bootstrap">90%</div>
+                      </div>
+                    </div>
+              </p>
+              <p>
+                <strong>Soft Skills:</strong><br />
+                Strong verbal and written communication skills, strategic
+                planning, time management skills.
+              </p>
+              <p>
+                <strong>Technical Skills: Computer-literate;</strong><br />
+                Data collection, capturing and processing; Computer software
+                [ArcGIS, QGIS, MS Excel, MS Word]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="seperater"> </hr>
+    </section>
+
+    <!-- Resume section -->
+    <section id="resume">
+      <h1 class="h1">My qualifications and work experience</h1>
+      <h2 class="h2"><span style="border-bottom: 3px solid red; ">Resume</span></h2>
+      <div class="container mt-5 mb-5" >
+        <div class="resum" class="row">
+          <div class="col-md-6 offset-md-3">
+            <h4>Education</h4>
+            <ul class="timeline">
+              <li>
+                <h7 class="h7">Research intern @ HSRC</h7><br />
+
+                <p class="float-right">30 May, 2021</p>
+                <p>
+                  I woroked as a research assistance at Human Science Research
+                  Council of South Africa.
+                </p>
+              </li>
+              <li>
+                <h7 class="h7"> Freelance cartographer</h7><br />
+
+                <p class="float-right">June, 2020</p>
+                <p>
+                  Did some freelance work creating maps for researchers within
+                  the GIS <br />field from mid-2020
+                </p>
+              </li>
+              <li>
+                <h7 class="h7">Tutor </h7><br />
+
+                <p class="float-right">24 February, 2019</p>
+                <p>
+                  Worked as a Geographic Information Sciences tutor at the
+                  University of Western Cape from 2019 to 2020.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="resum" class="row">
+          <div class="col-md-6 offset-md-3">
+            <h4>Work</h4>
+            <ul class="timeline">
+              <li>
+                <h7 class="h7">LifeChoices Academy </h7><br />
+
+                <p class="float-right">Sep, 2021 - present</p>
+                <p>Enrolled for a coding course at LifeCHoices Academy</p>
+              </li>
+              <li>
+                <h7 class="h7">Honours degree </h7><br />
+
+                <p class="float-right">Feb, 2020 - Nov, 2020</p>
+                <p>
+                  Enrolled for and completed Honours degree in GIS and
+                  Enviroonmental Management at the UNiversity of Western Cape
+                </p>
+              </li>
+              <li>
+                <h7 class="h7">Graduated for Honours </h7><br />
+
+                <p class="float-right">24 Feb 2017 - 20 Nov 2019</p>
+                <p>
+                  Enrolled for my Undergraduate degree in Geography and
+                  Environmental Studies at the University of Western Cape
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="seperater"> </hr>
+    </section>
+
+    <!-- projects section  -->
+
+    <section id="projects">
+      <div class="container" id="Projects">
+        <div class="pro">
+        <h1 class="h1">Some of my latest work</h1>
+        <h2 class="h2"><span style="border-bottom: 3px solid red; ">Projects</span></h2>
+      </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card  mb-3 shadow-lg">
+              <div class="card-body">
+                <h5 class="card-title">Timeline Project</h5>
+                <img
+                  src="time.png"
+                  class="card-img-top"
+                  alt="Timeline project"
+                />
+                <a
+                  href="https://github.com/NandeBija/timeline.git"
+                  class="fa fa-github"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card  mb-3 shadow-lg">
+              <div class="card-body">
+                <h5 class="card-title">Cards project</h5>
+                <img
+                  src="cards2.png"
+                  class="card-img-top"
+                  alt="Cards project"
+                />
+                <a
+                  href="https://github.com/NandeBija/Cards.git"
+                  class="fa fa-github"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card mb-3 shadow-lg">
+              <div class="card-body">
+                <h5 class="card-title">CSS Animation</h5>
+                <img src="animation.png" class="card-img-top" alt="animation" />
+                <a
+                  href="https://github.com/NandeBija/flip_cards.git"
+                  class="fa fa-github"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="seperater"> </hr>
+    </section>
+
+
+    <!-- Testimonials section -->
+
+    <section id="testimonil">
+      <div class="container">
+        <div class="row">
+          <h1 class="h1">More about me</h1>
+          <h2 class="h2"><span style="border-bottom: 3px solid red; ">Testimonials</span></h2>
+          <div class="col-sm-6">
+            <div class="test">
+              <img src="Godwin.jpeg" class=" test-img-top" alt="Godwin's testimonial picture">
+              <div class="card-body">
+                <h5 class="card-title  "><span class="comma">"</span>I have no hesiotancy writing a recommendation for Nande.
+                  He has a bright future in the industry<span class="comma">  "</span></h5>
+                <p class="card-text "> Godwin Dzvapatsva<span class="comma">|</span>  Lecturer</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="test">
+              <img src="siyanda.jpeg" class="test-img-top" alt="Siyanda's testimonial picture">
+              <div class="card-body">
+                <h5 class="card-title"><span class="comma">"</span>Nande is a very professional, hard-working individual and a talanted developer.
+                  He will be a success in the industry <span class="comma">  "</span></h5>
+                <p class="card-text">Siyanda Ncamazana<span class="comma">|</span> Collegue</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="test">
+              <img src="emma.jpeg" class="test-img-top" alt="Emmanuel'stestimonial picture">
+              <div class="card-body">
+                <h5 class="card-title"><span class="comma">"</span> I have known Nande as a collegue and a friend outside the workplace for long.
+                  He is a creative individual and very fun to work with.<span class="comma">  "</span></h5>
+                <p class="card-text">Emanuel Fente<span class="comma">|</span>  Collegue</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="test">
+              <img src="chad.jpg" class="test-img-top" alt="Azabenathi's testimonial picure">
+              <div class="card-body">
+                <h5 class="card-title"><span class="comma">"</span> I've had the chance to know Nande and work with him over the past few months. 
+                  He has a dedicated individual and has a great work ethic<span class="comma">  "</span></h5>
+                <p class="card-text">Chad Hendricks<span class="comma">|</span>  Collegue</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="seperater"> </hr>
+      
+    </section>
+
+    <!-- contact section -->
+    <section id="Contact">
+      <div class="container" >
+        <h1 class="h1">Get in touch with me</h1>
+        <p class="h2"><span style="border-bottom: 3px solid red; ">Contact</span></p>
+        <div class="row" id="call">
+          <div class="col-5">
+            <p id="p">
+              Do you speak in tongues? Its okay if you dont, <br />I speak
+              English too
+            </p>
+          </div>
+          <div class="col-7">
+            <img
+              src="contactMemoji-removebg-preview.png"
+              alt="memoji"
+              id="memoji"
+              id="memoji"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Left contact page -->
+       
+        <form id="contact-form" class="form-horizontal" role="form" action="https://formspree.io/f/xeqnjebb" method="post">
+          <div class="form-group">
+            <div class="col-sm-12" style="padding-bottom: 2%">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="NAME"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12" style="padding-bottom: 2%">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="EMAIL"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+            required
+            style="padding-bottom: 1%"
+          ></textarea>
+
+          <button
+            class="btn btn-primary send-button"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <div class="alt-send-button">
+              <i class="fa fa-paper-plane"></i
+              ><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+
+        <!-- Left contact page -->
+
+        <div class="direct-contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fa fa-map-marker fa-2x"
+                id="pin"><span class="contact-text place"
+                  >Cape Town, South Africa</span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-phone fa-2x"
+                ><span class="contact-text phone"
+                  ><a href="tel:1-212-555-5555" title="Give me a call"
+                    >(+27) 123456789</a
+                  ></span
+                ></i
+              >
+            </li>
+
+            <li class="list-item">
+              <i class="fa fa-envelope fa-2x"
+                ><span class="contact-text gmail"
+                  ><a href="mailto:#" title="Send me an email"
+                    >@gmail.com</a
+                  ></span
+                ></i
+              >
+            </li>
+          </ul>
+
+        </div>
+        
+      </div>
+      <hr class="seperater"> </hr>
+      
+    </section>
+    <!-- end contact section  -->
+
+    <!-- back to top button -->
+    <div id="back-top" style="display: block;">
+      <a href="#home"><i class="fa fa-chevron-up"></i></a>
+
+    </div>
+
+    <!-- footr -->
+
+    <footer>
+      <p style="padding-top: 9px;">
+        © 2021 Copyright Nande Bija <br />
+        
+        <a href="" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/" target="_blank" class="fa fa-github"></a>
+        
+
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+

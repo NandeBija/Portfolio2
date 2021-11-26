@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      img {
+        border-radius: 49%;
+        height: 70%;
+        width: 60%;
+        position: relative;
+        left: 90px;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        height: 53px;
+        bottom: inherit;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      .h2,
+      h2 {
+        text-align: center;
+        padding-bottom: 8px;
+      }
+      .h1,
+      h1 {
+        text-align: center;
+        color: gray;
+        font-size: medium;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: rgba(221, 221, 221, 0.192);
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #dbb03a;
+        color: white;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      #home {
+        height: 100vh;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .col-6 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#About">About</a>
+      <a href="#Resume">Resume</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Testimonials">Testimonials</a>
+      <a href="#Contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Landing section -->
+    <section>
+      <div id="home">
+        <div style="padding-left: 16px">
+          <h2 style="padding-top: 100px">THis is the landing section</h2>
+          <p>IT is responsive and i will get back to it just now now</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- About section -->
+    <section>
+      <div class="container" id="About">
+        <div class="row">
+          <h1 class="h1">Get to know me</h1>
+          <h2 class="h2">About</h2>
+          <div class="col-6">
+            <img src="me.jpg" alt="Nande" />
+            <div class="aboutImg"></div>
+          </div>
+
+          <div class="col">
+            <div class="aboutContent">
+              <p>
+                <strong>Bio:</strong><br />
+                I am a positive, enthusiastic individual who is always eager to
+                take on new challenges. <br />I can be a bit shy and nervous
+                around new people but warm up as soon as I read the energy in
+                the room.<br />
+
+                <strong>Where did your passion for coding start:</strong><br />
+                I fell in love with the tech industry as soon as I had access to
+                free Wi-Fi at University in 2017, <br />but only had the chance
+                to venture into the industry recently. The tech industry is the
+                future, and the future is now.
+              </p>
+              <p>
+                <strong>Passion Board:</strong><br />
+                Watching series and documentaries [Genre: Science fiction;
+                Thriller; Comedy]
+              </p>
+              <p>
+                <strong>Soft Skills:</strong><br />
+                Strong verbal and written communication skills, strategic
+                planning, time management skills.
+              </p>
+              <p>
+                <strong>Technical Skills: Computer-literate;</strong><br />
+                Data collection, capturing and processing; Computer software
+                [ArcGIS, QGIS, MS Excel, MS Word]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume section -->
+    <div id="resume">
+      <div class="timeline_bar"></div>
+      <li>sdfvidhsbcjksdbc</li>
+      <li>sdfvidhsbcjksdbc</li>
+      <li>sdfvidhsbcjksdbc</li>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
